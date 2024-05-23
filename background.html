@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="./background.css">
+</head>
+<body>
+    <button id="mudar-cor" class="mudar-cor">Click me!</button>
+    <script>
+              var cores = ['blue', 'red', 'brown'];
+        var indiceAtual = 0;
+
+        document.getElementById('mudar-cor').onclick = function() {
+            document.body.style.backgroundColor = cores[indiceAtual];
+            indiceAtual = (indiceAtual + 1) % cores.length;
+        };
+    </script>
+</body>
+</html>
